@@ -38,11 +38,7 @@ const validateCred = array1 => {
         }
       sum1=yarra1[i]+sum1;                         // at the end either the modified number (if it met any of the conditionals) or the unmodified number gets added to the sum variable
     }
-     if (sum1%10===0) {                            // if the credit card number is vaild this returns true if else it returns false
-         return true;
-     } else {
-         return false;
-     } 
+     return sum1 % 10 == 0;
 };
 
 //This checks an array of nested arrays for invalid credit card numbers and returns an array of invalid arrays
